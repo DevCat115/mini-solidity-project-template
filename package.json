@@ -1,0 +1,18 @@
+{
+  "name": "mini-project-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "forge build",
+    "test": "forge test",
+    "coverage": "forge coverage --report lcov",
+    "gas-report": "forge test --gas-report",
+    "list-function-selectors": "forge inspect $CONTRACT methods > function-selectors-$CONTRACT.json",
+    "forge-snapshot": "forge snapshot --asc --snap .gas-snapshot",
+    "lint": "solhint './contracts/*.sol'",
+    "lint:fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "solhint": "^4.1.1"
+  }
+}
